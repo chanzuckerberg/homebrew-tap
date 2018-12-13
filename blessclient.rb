@@ -1,9 +1,9 @@
 class Blessclient < Formula
   desc "SSH without pain."
   homepage "https://github.com/chanzuckerberg/blessclient"
-  url "https://github.com/chanzuckerberg/blessclient/releases/download/v0.3.2/blessclient_0.3.2_darwin_amd64.tar.gz"
-  version "0.3.2"
-  sha256 "3a5e9080914f66b4d57211f1d1484bef7516c7affc25decd8508a707117077e7"
+  url "https://github.com/chanzuckerberg/blessclient/releases/download/v0.3.6/blessclient_0.3.6_darwin_amd64.tar.gz"
+  version "0.3.6"
+  sha256 "7f7d8f4240b90d0dc18c3a746d90620eb07f85c1128ba9eccdf2982ddd741fe0"
 
   def install
     bin.install "blessclient"

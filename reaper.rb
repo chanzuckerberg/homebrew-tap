@@ -2,9 +2,9 @@
 class Reaper < Formula
   desc "Don't fear."
   homepage "https://github.com/chanzuckerberg/reaper"
-  url "https://github.com/chanzuckerberg/reaper/releases/download/v0.0.3/reaper_0.0.3_darwin_amd64.tar.gz"
-  version "0.0.3"
-  sha256 "80231c6e8ce7e67769b8a6ff54b1f91ce56ea308663a1e1eff1967d3b20a25de"
+  url "https://github.com/chanzuckerberg/reaper/releases/download/v0.0.4/reaper_0.0.4_darwin_amd64.tar.gz"
+  version "0.0.4"
+  sha256 "500b69e8f60532d9d35b0d04c3ea45372bdd1d709de3eee101602d530d324574"
 
   def install
     bin.install "reaper"

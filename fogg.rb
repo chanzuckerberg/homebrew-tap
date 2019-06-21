@@ -2,9 +2,9 @@
 class Fogg < Formula
   desc "Terraform without pain."
   homepage "https://github.com/chanzuckerberg/fogg"
-  url "https://github.com/chanzuckerberg/fogg/releases/download/v0.23.2/fogg_0.23.2_darwin_amd64.tar.gz"
-  version "0.23.2"
-  sha256 "747e43358a4a969f71ebd1b43ef7aa4adb5ea76a29fac983ea336129372e7689"
+  url "https://github.com/chanzuckerberg/fogg/releases/download/v0.24.0/fogg_0.24.0_darwin_amd64.tar.gz"
+  version "0.24.0"
+  sha256 "17efc373199b6b65a1b286502ea4870d504d412d8ff5f2a0b08c673849323491"
 
   def install
     bin.install "fogg"

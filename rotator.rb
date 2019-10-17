@@ -2,16 +2,16 @@
 class Rotator < Formula
   desc "Rotating credentials."
   homepage "https://github.com/chanzuckerberg/rotator"
-  version "0.0.6"
+  version "0.1.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chanzuckerberg/rotator/releases/download/v0.0.6/rotator_0.0.6_darwin_amd64.tar.gz"
-    sha256 "ad81f3c9adfcb4bc75043d5a7b83432cc40e221b09f040c808527ba023955507"
+    url "https://github.com/chanzuckerberg/rotator/releases/download/v0.1.0/rotator_0.1.0_darwin_amd64.tar.gz"
+    sha256 "5ea732c15b6f9179c289022984ffd6486ac8e96258b259e2171cf213b178a9bd"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/rotator/releases/download/v0.0.6/rotator_0.0.6_linux_amd64.tar.gz"
-      sha256 "22bc6caaddc8c1c8aae6d8413393f5f9ed0a6e412b95bd82910e468fb9ef5ffb"
+      url "https://github.com/chanzuckerberg/rotator/releases/download/v0.1.0/rotator_0.1.0_linux_amd64.tar.gz"
+      sha256 "f969ce24da89b675b2fc08a671391640b426f87e87a84571c99b6dbd7a95ef7b"
     end
   end
 

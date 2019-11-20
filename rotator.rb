@@ -7,11 +7,11 @@ class Rotator < Formula
 
   if OS.mac?
     url "https://github.com/chanzuckerberg/rotator/releases/download/v0.2.0/rotator_0.2.0_darwin_amd64.tar.gz"
-    sha256 "5659e0c622900691e20a91503f346c80ec8ed591c1845fa950cd160122bc7908"
+    sha256 "171be0416f4d6f8ff8f4bb0cc4f032a4010b9ecea958c55dbf6363d22c9c83dd"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/chanzuckerberg/rotator/releases/download/v0.2.0/rotator_0.2.0_linux_amd64.tar.gz"
-      sha256 "30ae502f2f3dea0035155276203234d33bf9aefdb521ce8696542edc0472ac15"
+      sha256 "9b040c68d718489ea2b4545dee1304ee8d981713d7317c7e8c7eef3f0cf6ce11"
     end
   end
 

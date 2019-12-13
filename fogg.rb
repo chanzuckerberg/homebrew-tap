@@ -2,16 +2,16 @@
 class Fogg < Formula
   desc "Terraform without pain."
   homepage "https://github.com/chanzuckerberg/fogg"
-  version "0.36.2"
+  version "0.36.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chanzuckerberg/fogg/releases/download/v0.36.2/fogg_0.36.2_darwin_amd64.tar.gz"
-    sha256 "e2b175c2e5f28016f31ccbec14358b7afdc36da02d1b6e27470fe88d39cbb878"
+    url "https://github.com/chanzuckerberg/fogg/releases/download/v0.36.4/fogg_0.36.4_darwin_amd64.tar.gz"
+    sha256 "aa32f249ec2d15d52aa13f2740fe1fbc7c923f69ffd1cf1f6e72218ab84ebf0d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.36.2/fogg_0.36.2_linux_amd64.tar.gz"
-      sha256 "9573edaf7d95d21b977def3b83c8cbb674a147582e2027ade5ba3c095749821e"
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.36.4/fogg_0.36.4_linux_amd64.tar.gz"
+      sha256 "184a0801ad7fd2cc025521882aa23b31db1141327b71b82e21976aba622e636f"
     end
   end
 

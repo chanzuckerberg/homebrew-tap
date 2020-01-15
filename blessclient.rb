@@ -2,12 +2,12 @@
 class Blessclient < Formula
   desc "SSH without pain."
   homepage "https://github.com/chanzuckerberg/blessclient"
-  version "0.4.9"
+  version "0.4.12"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chanzuckerberg/blessclient/releases/download/v0.4.9/blessclient_0.4.9_darwin_amd64.tar.gz"
-    sha256 "a878f3e3f4cbf8daeda6c7294b9995229ce98ccd009048cc252fd40f7117f0d9"
+    url "https://github.com/chanzuckerberg/blessclient/releases/download/v0.4.12/blessclient_0.4.12_darwin_amd64.tar.gz"
+    sha256 "bcddd3d20c80b03816a7960564ed30d8d1e96e69d87e052a7130cdc2b91e9bbb"
   elsif OS.linux?
   end
 

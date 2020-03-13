@@ -10,7 +10,7 @@ class Fogg < Formula
     sha256 "7870e4e34a3017bbde58bc6f2d0664e6449eac53ad3f5691965b612a36a492fe"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.41.0/fogg_0.40410_linux_amd64.tar.gz"
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.41.0/fogg_0.41.0_linux_amd64.tar.gz"
       sha256 "036fd13df8442cb61cefdbb610d300e3b3281362656187a7eee4ca523dcbe076"
     end
   end

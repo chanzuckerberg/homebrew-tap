@@ -6,12 +6,12 @@ class Fogg < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chanzuckerberg/fogg/releases/download/v0.41.1/fogg_0.41.1_darwin_amd64.tar.gz"
-    sha256 "58dcf73a91a91642939312d6698604a0f495d7956d01024351d674f227773aa4"
+    url "https://github.com/chanzuckerberg/fogg/releases/download/v0.42.3/fogg_0.42.3_darwin_amd64.tar.gz"
+    sha256 "501e731a11f31f67be9d5f9d7970aefd10e119ade4574902c83033827ca810b8"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.41.1/fogg_0.41.1_linux_amd64.tar.gz"
-      sha256 "544577c3170b8d92818198e8ca612e4ae01532e56be8d0e5d44577f6af725e72"
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.42.3/fogg_0.42.3_linux_amd64.tar.gz"
+      sha256 "2b4a699455f60841d557727595a6adf4e3527527fd054c741c72cf6b9890609c"
     end
   end
 

@@ -2,16 +2,16 @@
 class Bff < Formula
   desc "Breaking, Feature, Fix - a tool for managing semantic versioning"
   homepage "https://github.com/chanzuckerberg/bff"
-  version "0.1.6"
+  version "0.1.7"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chanzuckerberg/bff/releases/download/v0.1.6/bff_0.1.6_darwin_amd64.tar.gz"
-    sha256 "09ad4e78809d1f23b62e49975dfd3dbcd6a44040ffac19d404403335389d9204"
+    url "https://github.com/chanzuckerberg/bff/releases/download/v0.1.7/bff_0.1.7_darwin_amd64.tar.gz"
+    sha256 "5c6a7c9a94c1631b8b4caec203e5e0549a16aa988fbd0bf9fa4518f0690c23e8"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/bff/releases/download/v0.1.6/bff_0.1.6_linux_amd64.tar.gz"
-      sha256 "54b48e5ac62503aabcd575baba51fda2f2349ddaa611ad8a7381432387d35ce2"
+      url "https://github.com/chanzuckerberg/bff/releases/download/v0.1.7/bff_0.1.7_linux_amd64.tar.gz"
+      sha256 "22e4ea1a1b6b5abc391dfbd16fe733a791b9ae85667e1e310666f71bb6b96ff6"
     end
   end
 

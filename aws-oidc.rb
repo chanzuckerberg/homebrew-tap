@@ -2,16 +2,16 @@
 class AwsOidc < Formula
   desc "A command line utility tool to help generate AWS STS credentials from an OIDC application."
   homepage "https://github.com/chanzuckerberg/aws-oidc"
-  version "0.5.3"
+  version "0.6.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.5.3/aws-oidc_0.5.3_darwin_amd64.tar.gz"
-    sha256 "79955e52b17a420f34946dd2d9a1ae281fe7ac45874b2f1652dad110ca45e30f"
+    url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.6.0/aws-oidc_0.6.0_darwin_amd64.tar.gz"
+    sha256 "ed665ff7bb82d7ccd05eb8f47fe699ca052f4c185c85969d755a3f4ea48bd123"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.5.3/aws-oidc_0.5.3_linux_amd64.tar.gz"
-      sha256 "89b7d18d30b73031ab677c3d1f9fd48b835ca7e13a4375a1e815a1ae6aab0454"
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.6.0/aws-oidc_0.6.0_linux_amd64.tar.gz"
+      sha256 "d4213dc546989b55a0c9c744daebbc8de1618796f92c45e2a83af221762bc2b6"
     end
   end
 

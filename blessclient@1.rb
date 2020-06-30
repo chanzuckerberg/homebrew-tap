@@ -2,16 +2,16 @@
 class BlessclientAT1 < Formula
   desc "SSH without pain."
   homepage "https://github.com/chanzuckerberg/blessclient"
-  version "1.1.4"
+  version "1.2.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chanzuckerberg/blessclient/releases/download/v1.1.4/blessclient_1.1.4_darwin_amd64.tar.gz"
-    sha256 "d81b6d92d6e686076be2b790a80decbf07f94e4ef7162b80d24bc93c7dff69f8"
+    url "https://github.com/chanzuckerberg/blessclient/releases/download/v1.2.0/blessclient_1.2.0_darwin_amd64.tar.gz"
+    sha256 "ca6cbac33e96f6baf64bc14ed9cdc4df2832a8888b370f52d99bfe9c48c64774"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/blessclient/releases/download/v1.1.4/blessclient_1.1.4_linux_amd64.tar.gz"
-      sha256 "8070449b138352e929b79fdfa722af99ddcab67079a873d4f795ee0edd30b084"
+      url "https://github.com/chanzuckerberg/blessclient/releases/download/v1.2.0/blessclient_1.2.0_linux_amd64.tar.gz"
+      sha256 "9650bf1c1339043b9ad8111060800b87867f5fcc3af9bac63f8b9dc4e7c51fc4"
     end
   end
 

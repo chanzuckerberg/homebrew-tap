@@ -2,16 +2,16 @@
 class S3parcp < Formula
   desc "Copy large files to, from, and between s3 buckets with parallelism"
   homepage "https://github.com/chanzuckerberg/s3parcp"
-  version "0.2.1-test-8"
+  version "0.2.1-test-10"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chanzuckerberg/s3parcp/releases/download/v0.2.1-test-8/s3parcp_0.2.1-test-8_Darwin_x86_64.tar.gz"
-    sha256 "7740625370fa442b5cfc3ed0928c6cd802792c9312c1f49ed995e8b650f44740"
+    url "https://github.com/chanzuckerberg/s3parcp/releases/download/v0.2.1-test-10/s3parcp_0.2.1-test-10_Darwin_x86_64.tar.gz"
+    sha256 "95d09f8e981a0503d456d3aca4ce7a6e2d539da69a27af63e80b72a1b5bdffd2"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/s3parcp/releases/download/v0.2.1-test-8/s3parcp_0.2.1-test-8_Linux_x86_64.tar.gz"
-      sha256 "8a91cfcfbe4819f08fed74254c50c92dd86c15ccecaea60fcccc87f71c92267b"
+      url "https://github.com/chanzuckerberg/s3parcp/releases/download/v0.2.1-test-10/s3parcp_0.2.1-test-10_Linux_x86_64.tar.gz"
+      sha256 "2c2476eca37bad152c0d37acf0f746cb562a4aff748964fa451af2c1b4df2d7e"
     end
   end
 

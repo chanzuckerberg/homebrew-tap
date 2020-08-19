@@ -2,22 +2,21 @@
 class S3parcp < Formula
   desc "Copy large files to, from, and between s3 buckets with parallelism"
   homepage "https://github.com/chanzuckerberg/s3parcp"
-  version "0.2.1-test-22"
+  version "0.2.1-test-23"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chanzuckerberg/s3parcp/releases/download/v0.2.1-test-22/s3parcp_0.2.1-test-22_Darwin_x86_64.tar.gz"
-    sha256 "7a46702cde90c1f917d80c4eb20cdba162b7b5f3ea163a2a145cb05aaec9ebae"
+    url "https://github.com/chanzuckerberg/s3parcp/releases/download/v0.2.1-test-23/s3parcp_0.2.1-test-23_Darwin_x86_64.tar.gz"
+    sha256 "6ced558121de8a24f3b711c810068d027c36ed64948ab5a20dc3e17563150389"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/s3parcp/releases/download/v0.2.1-test-22/s3parcp_0.2.1-test-22_Linux_x86_64.tar.gz"
-      sha256 "7f0c4a1dd7d959d850a095fd72b6dcf80a982b6c83c3a36913ed4c6598567d11"
+      url "https://github.com/chanzuckerberg/s3parcp/releases/download/v0.2.1-test-23/s3parcp_0.2.1-test-23_Linux_x86_64.tar.gz"
+      sha256 "b34fe0311519aad9e573b87b157c90609718b62d6d339aff3b800b18e8e78268"
     end
   end
 
   def install
     bin.install "s3parcp"
-    include.install "utils.bash"
     bash_completion.install "completions/bash" => "s3parcp"
   end
 

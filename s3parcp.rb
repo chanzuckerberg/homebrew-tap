@@ -7,11 +7,11 @@ class S3parcp < Formula
 
   if OS.mac?
     url "https://github.com/chanzuckerberg/s3parcp/releases/download/v0.2.1-test/s3parcp_0.2.1-test_darwin_amd64.tar.gz"
-    sha256 "446acd5b439c02d3035b6a7bfaf3c3b458405eec7a07dd33c82cfa1656c3f29b"
+    sha256 "1c455d5ef74b176f0f213c2f59c5947ea9854a1ac8e01aae63c289d0f170445d"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/chanzuckerberg/s3parcp/releases/download/v0.2.1-test/s3parcp_0.2.1-test_linux_amd64.tar.gz"
-      sha256 "03ef80f30a65b541ebfdf9c5faef269646617b49879e34dfea3ab7a7085da94f"
+      sha256 "9dda55eca58632e257832d1ee901088327db202e5bcf387d50d4f4a5033c19a2"
     end
   end
 

@@ -2,16 +2,16 @@
 class CrcSquared < Formula
   desc "Copy large files to, from, and between s3 buckets with parallelism"
   homepage "https://github.com/chanzuckerberg/crc-squared"
-  version "0.0.0"
+  version "0.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chanzuckerberg/crc-squared/releases/download/v0.0.0/crc-squared_0.0.0_darwin_amd64.tar.gz"
-    sha256 "21bed86d9428b6cd92214a0f63a0048b603ea7550c23ab73390f1a48a4ae3419"
+    url "https://github.com/chanzuckerberg/crc-squared/releases/download/v0.0.1/crc-squared_0.0.1_darwin_amd64.tar.gz"
+    sha256 "f18a85cb11d980067dd906387c600e7b3bebb171352bd67e37e841db2f41ca0f"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/crc-squared/releases/download/v0.0.0/crc-squared_0.0.0_linux_amd64.tar.gz"
-      sha256 "ee02c3bb4a30308b0ba334412535f1ce43ff666983dde6b94a8fc29b64489852"
+      url "https://github.com/chanzuckerberg/crc-squared/releases/download/v0.0.1/crc-squared_0.0.1_linux_amd64.tar.gz"
+      sha256 "6c84f902018fadf4d2386952087b88d6e174cc8fa1979019281e1db3e44c37ac"
     end
   end
 

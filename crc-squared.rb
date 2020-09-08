@@ -7,11 +7,11 @@ class CrcSquared < Formula
 
   if OS.mac?
     url "https://github.com/chanzuckerberg/crc-squared/releases/download/v0.1.0/crc-squared_0.1.0_darwin_amd64.tar.gz"
-    sha256 "56892f0889b0376e41c5fd2f37c7762b23a1a42edeb8852c197897cac2b7f7a4"
+    sha256 "de2630c531ca9995a16970430855bf57f3fd18f72c9573c7eddba8bcda6d50fc"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/chanzuckerberg/crc-squared/releases/download/v0.1.0/crc-squared_0.1.0_linux_amd64.tar.gz"
-      sha256 "77e9de11b2c2c169f129ddbd3e0f07be5b61fb0bcadf6f4bd6fe799804d81b16"
+      sha256 "90d468868e4e2f36c5aa6472d9b7aabf1606f4af5614bb4791eccc9e0802bc39"
     end
   end
 

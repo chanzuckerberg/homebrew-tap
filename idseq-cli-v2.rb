@@ -10,15 +10,15 @@ class IdseqCliV2 < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/chanzuckerberg/idseq-cli-v2/releases/download/v2.0.10-alpha/idseq-cli-v2_2.0.10-alpha_darwin_amd64.tar.gz"
-    sha256 "a968cfd37101af33ca3ab6bfc1f69873380a31e5f7b4243cb0b4de159c514feb"
+    sha256 "63533b9cc78b209237b19f9b737b3646ccafc4ae385121692afb59ac4ec6b00b"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/chanzuckerberg/idseq-cli-v2/releases/download/v2.0.10-alpha/idseq-cli-v2_2.0.10-alpha_darwin_arm64.tar.gz"
-    sha256 "089d93bcc683b25bc7fa86e2e9ce24f965b0168b0d00c19f290c750ce7a25c62"
+    sha256 "72031d38a17f7ec415ac87bfb4738a5d97e2670d0214ae5e4691e9607ce31a1b"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/chanzuckerberg/idseq-cli-v2/releases/download/v2.0.10-alpha/idseq-cli-v2_2.0.10-alpha_linux_amd64.tar.gz"
-    sha256 "47ba4b7cb6ad5b42d6738c01f165c5a0439766d0dd7584e34eb3546e46ca4643"
+    sha256 "57aa2a92984f4844200c20452811eb0cfbe617ed561bbc7119b671220e3f9acc"
   end
 
   def install

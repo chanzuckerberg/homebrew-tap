@@ -5,28 +5,28 @@
 class Happy < Formula
   desc "A command line tool for happy path."
   homepage "https://github.com/chanzuckerberg/happy"
-  version "0.0.6"
+  version "0.0.7"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.0.6/happy_0.0.6_darwin_amd64.tar.gz"
-      sha256 "c6a8a2136e856a9d50de1847ca69a8f2384716986c82aea23833b90e300cc412"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.0.7/happy_0.0.7_darwin_amd64.tar.gz"
+      sha256 "262713544e683b8b9c2bc20553c438f3b27ee2bcedfb0221aa5b6e3bf7a54f53"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.0.6/happy_0.0.6_darwin_arm64.tar.gz"
-      sha256 "24ccb714a69bb8236a2d3de85bf1a5bf4550819d1ebf288664d9dc2fa3ccddbd"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.0.7/happy_0.0.7_darwin_arm64.tar.gz"
+      sha256 "2d8d04cf87e3702cf3e33eee5a3a725df070f303ba1da4c9297d2e77c504f926"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.0.6/happy_0.0.6_linux_amd64.tar.gz"
-      sha256 "55d8aede4afd46027386c3b5b50d46873c08d82235fa9d354d68d8e899364d90"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.0.7/happy_0.0.7_linux_amd64.tar.gz"
+      sha256 "0146e422dba7ccba7e6bdc943b3b9d1223e58ac89c1fcc9cf72a46d76a03e615"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.0.6/happy_0.0.6_linux_arm64.tar.gz"
-      sha256 "cbedd37109a09f1a54993627d970d38f519e2b356b75c03f154eb8618acf6e4e"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.0.7/happy_0.0.7_linux_arm64.tar.gz"
+      sha256 "8ca487f6cfe0a2949e38de2425b42e034ac639c6df6ea6509403772369fa8d0d"
     end
   end
 

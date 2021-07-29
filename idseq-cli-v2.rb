@@ -11,18 +11,18 @@ class IdseqCliV2 < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/chanzuckerberg/idseq-cli-v2/releases/download/v2.1.2-beta/idseq-cli-v2_darwin_amd64.tar.gz"
-      sha256 "06c804c03bf1f0996a2b21e7d7cada4dd761ed404d3efac2a995a108ab4ca2a4"
+      sha256 "fbb25e7b5212e81319e0a6c224ff2f263ed267f30601d38fe3888b0c4ffafa45"
     end
     if Hardware::CPU.arm?
       url "https://github.com/chanzuckerberg/idseq-cli-v2/releases/download/v2.1.2-beta/idseq-cli-v2_darwin_arm64.tar.gz"
-      sha256 "50c4999678a70629a49a27f408d71f31e76be469955be1013bc72886a7fb43d7"
+      sha256 "133b3ce6b9f621a2efc143eee65ba174d435b345caaa4772759d889bd6ec433b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/chanzuckerberg/idseq-cli-v2/releases/download/v2.1.2-beta/idseq-cli-v2_linux_amd64.tar.gz"
-      sha256 "d275719ebd04f1b405a9f6d4eff88f2aebf48cc9f866f61fde90a01d6a4a216b"
+      sha256 "90f3676ef1a4a40bb2c483eaf9337a35260deb775c5439bf53a58042948608fa"
     end
   end
 

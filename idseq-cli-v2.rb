@@ -5,24 +5,24 @@
 class IdseqCliV2 < Formula
   desc "A CLI for uploading samples to IDSeq"
   homepage "https://github.com/chanzuckerberg/idseq-cli-v2"
-  version "2.1.4-beta"
+  version "2.1.5-beta"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/idseq-cli-v2/releases/download/v2.1.4-beta/idseq-cli-v2_darwin_amd64.tar.gz"
-      sha256 "3ea27ba1a1ce37a88dab8839025e3af635f9ad7b72146b407e928410c922d8cb"
+      url "https://github.com/chanzuckerberg/idseq-cli-v2/releases/download/v2.1.5-beta/idseq-cli-v2_darwin_amd64.tar.gz"
+      sha256 "3ec7b746d335c35232fd21f268b6646a7c6c64bb3b1c23b06d83b25d829e700d"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/idseq-cli-v2/releases/download/v2.1.4-beta/idseq-cli-v2_darwin_arm64.tar.gz"
-      sha256 "010a9bd122294612ba9d53577cf812b11afb584028bdc79099686a6ebe9c893b"
+      url "https://github.com/chanzuckerberg/idseq-cli-v2/releases/download/v2.1.5-beta/idseq-cli-v2_darwin_arm64.tar.gz"
+      sha256 "fb25bb67d6b8009fc62df23129f3824822732fb3dc7e6353ae8f4c3efd04318c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/idseq-cli-v2/releases/download/v2.1.4-beta/idseq-cli-v2_linux_amd64.tar.gz"
-      sha256 "4ebea56d5188aa1e75504de1ce1aeaf9dc548aabd2997daef62f643e0a97a08c"
+      url "https://github.com/chanzuckerberg/idseq-cli-v2/releases/download/v2.1.5-beta/idseq-cli-v2_linux_amd64.tar.gz"
+      sha256 "a403b4b7b33d3fdf00b14266e69ce2fb863db65ab017994881beae881bc6313f"
     end
   end
 

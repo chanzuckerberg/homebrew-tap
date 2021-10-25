@@ -5,29 +5,44 @@
 class AwsOidc < Formula
   desc "A command line utility tool to help generate AWS STS credentials from an OIDC application."
   homepage "https://github.com/chanzuckerberg/aws-oidc"
-  version "0.24.2"
-  bottle :unneeded
+  version "0.24.3"
 
   on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.24.3/aws-oidc_0.24.3_darwin_arm64.tar.gz"
+      sha256 "58889ea77580ef9be67a48d387cf10b29204fadfd0dd8071705d9e3c9eead61a"
+
+      def install
+        bin.install "aws-oidc"
+      end
+    end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.24.2/aws-oidc_0.24.2_darwin_amd64.tar.gz"
-      sha256 "01ef4413c6ea376e0a4d38c72d545ca8d3192348fd0004dca89f898239d35171"
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.24.3/aws-oidc_0.24.3_darwin_amd64.tar.gz"
+      sha256 "e7ef2bc8f412443d10892b60379fe67a2110e56a8414c741a7951432a48e3e74"
+
+      def install
+        bin.install "aws-oidc"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.24.2/aws-oidc_0.24.2_linux_amd64.tar.gz"
-      sha256 "d44e8020962b222b069e70edd487d406f6da7dd60ecdd9090c59d382a0455555"
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.24.3/aws-oidc_0.24.3_linux_amd64.tar.gz"
+      sha256 "bd23fd8bb4b5d73cb1c229c825cda05897cd16cab0d36631b1741f8109e4f1e6"
+
+      def install
+        bin.install "aws-oidc"
+      end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.24.2/aws-oidc_0.24.2_linux_arm64.tar.gz"
-      sha256 "cf3a419e32b637524dfb18e0328d2165bf79dab825dc059a5c30fc65b95d40cf"
-    end
-  end
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.24.3/aws-oidc_0.24.3_linux_arm64.tar.gz"
+      sha256 "dcfacd3189d317fd4b59ecd1865cba4e63de21b04f3f60f48dfcc933be1c66a9"
 
-  def install
-    bin.install "aws-oidc"
+      def install
+        bin.install "aws-oidc"
+      end
+    end
   end
 
   test do

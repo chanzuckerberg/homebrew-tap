@@ -5,28 +5,44 @@
 class Fogg < Formula
   desc "Terraform without pain."
   homepage "https://github.com/chanzuckerberg/fogg"
-  version "0.58.6"
-  bottle :unneeded
+  version "0.59.0"
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/chanzuckerberg/fogg/releases/download/v0.58.6/fogg_0.58.6_darwin_amd64.tar.gz"
-    sha256 "38f28fc5c07aad9fa478d983f88ac30cb8be084cb5cb8ffdd6337fbc7f91596f"
-  end
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/chanzuckerberg/fogg/releases/download/v0.58.6/fogg_0.58.6_darwin_arm64.tar.gz"
-    sha256 "acd422111a906bd0625bda2eb22d00785414a94ea20c49098cefd4e6966ec6bc"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/chanzuckerberg/fogg/releases/download/v0.58.6/fogg_0.58.6_linux_amd64.tar.gz"
-    sha256 "4fd6fbb6f22c19fd1a3a1715d4cddcbab062330a29e2b44fc93a44d040a6f52b"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/chanzuckerberg/fogg/releases/download/v0.58.6/fogg_0.58.6_linux_arm64.tar.gz"
-    sha256 "494d918c906f7d70c6aab6e86f72a3270f7a8dc928e15f5044b8021c2537760b"
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.59.0/fogg_0.59.0_darwin_arm64.tar.gz"
+      sha256 "8a62a32bf6783acc6da989e19c5990378b8414c64fbf669019026378a5a1861c"
+
+      def install
+        bin.install "fogg"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.59.0/fogg_0.59.0_darwin_amd64.tar.gz"
+      sha256 "5b942593f0927ecb6c0ce2cb5c125d82bc59d84c6f96fecb8c39f5cf898445ed"
+
+      def install
+        bin.install "fogg"
+      end
+    end
   end
 
-  def install
-    bin.install "fogg"
+  on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.59.0/fogg_0.59.0_linux_arm64.tar.gz"
+      sha256 "2d3c7bd411b2b5874027f294d4c8499d3c6535fb13d26c1f677896fc0bc94641"
+
+      def install
+        bin.install "fogg"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.59.0/fogg_0.59.0_linux_amd64.tar.gz"
+      sha256 "33eeb39bddabddfa2fc1e3dafd0f77414110a6470333dac4466a539500473216"
+
+      def install
+        bin.install "fogg"
+      end
+    end
   end
 
   test do

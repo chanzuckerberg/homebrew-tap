@@ -5,20 +5,20 @@
 class Happy < Formula
   desc "A command line tool for happy path."
   homepage "https://github.com/chanzuckerberg/happy"
-  version "0.13.0"
+  version "0.14.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.13.0/happy_0.13.0_darwin_amd64.tar.gz"
-      sha256 "648e5fa0744702e8fa21f95438f5619550caef06cd74692bb04ce41e2ca2b8be"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.14.0/happy_0.14.0_darwin_amd64.tar.gz"
+      sha256 "f5f9d393a929d62de6377e9f4b110239c0873ba1b34bded087759a7632b76f03"
 
       def install
         bin.install "happy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.13.0/happy_0.13.0_darwin_arm64.tar.gz"
-      sha256 "1822f1ea7e0c0d8fa6e89f0860521d289342217c2392e39e8bdc10f9b68d38eb"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.14.0/happy_0.14.0_darwin_arm64.tar.gz"
+      sha256 "2d7cc695f790dd61abd2975524e86cb76e93cdda83aa7525d71a73a6cafa1d61"
 
       def install
         bin.install "happy"
@@ -27,17 +27,17 @@ class Happy < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.13.0/happy_0.13.0_linux_amd64.tar.gz"
-      sha256 "453da72382ba3c1f4f81471cbb5dfe065f3d3e67fe2204dc53ad898d733826c9"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.14.0/happy_0.14.0_linux_arm64.tar.gz"
+      sha256 "3c9995091f8fc3b7a6c9c12aac42923f4e8e190475f1c81df98a40d57a3a3a36"
 
       def install
         bin.install "happy"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.13.0/happy_0.13.0_linux_arm64.tar.gz"
-      sha256 "aac1c0f195756a3d724791f1e1d2fcacde879098c156529923db6931da760d37"
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.14.0/happy_0.14.0_linux_amd64.tar.gz"
+      sha256 "a97a4d1955a5f346cebc0b8386bd7ddd33090540be152220d7538e9bd1539372"
 
       def install
         bin.install "happy"

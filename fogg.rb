@@ -5,20 +5,20 @@
 class Fogg < Formula
   desc "Terraform without pain."
   homepage "https://github.com/chanzuckerberg/fogg"
-  version "0.59.2"
+  version "0.60.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.59.2/fogg_0.59.2_darwin_arm64.tar.gz"
-      sha256 "47ad2a78a62096908ee768214f4daac21cca19a9fc05f6a0d3d05bd39c8b56e8"
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.60.0/fogg_0.60.0_darwin_amd64.tar.gz"
+      sha256 "a73a7d1a52bd2d620225a91cf089e4f8bfa7562858ba245b944a5f7a2c74a354"
 
       def install
         bin.install "fogg"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.59.2/fogg_0.59.2_darwin_amd64.tar.gz"
-      sha256 "f3078e97b73acbb7161949570a0fd8076969914066ba0883dafb3fce6b5b8b5a"
+    if Hardware::CPU.arm?
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.60.0/fogg_0.60.0_darwin_arm64.tar.gz"
+      sha256 "2e0147283ebcf45c92c4700e2e9c9ba5a7b344f04e3e918005bc35495fabf3d1"
 
       def install
         bin.install "fogg"
@@ -28,16 +28,16 @@ class Fogg < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.59.2/fogg_0.59.2_linux_arm64.tar.gz"
-      sha256 "f43a4bb3e79a7ac38f5e5eb09497627060563484c7bd357cbb8e851bb6136dc5"
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.60.0/fogg_0.60.0_linux_arm64.tar.gz"
+      sha256 "731340f73c4c3547ad1539d2ac044d44b0a0501ad432910a5d28cbd11bf9516e"
 
       def install
         bin.install "fogg"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.59.2/fogg_0.59.2_linux_amd64.tar.gz"
-      sha256 "4fae1385ad85421b777d90f30d518934e1ace107da67cf4bab378ccb46e39fc4"
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.60.0/fogg_0.60.0_linux_amd64.tar.gz"
+      sha256 "7001db2094c605c567afe49adf154aaa35f461c6d27614b17a0bf17394821642"
 
       def install
         bin.install "fogg"

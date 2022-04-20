@@ -5,12 +5,12 @@
 class S3parcp < Formula
   desc "Copy large files to, from, and between s3 buckets with parallelism"
   homepage "https://github.com/chanzuckerberg/s3parcp"
-  version "1.0.3-alpha"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/s3parcp/releases/download/v1.0.3-alpha/s3parcp_1.0.3-alpha_darwin_amd64.tar.gz"
-      sha256 "b586ed3e6fde39aa75b7b1b6fbe201e0803b44f7af9c7ac169248be21383663d"
+      url "https://github.com/chanzuckerberg/s3parcp/releases/download/v1.0.0/s3parcp_1.0.0_darwin_amd64.tar.gz"
+      sha256 "38acd2c4981bd1ba8cf49182270ededc8ffd9dcf82104f8d04377f42cc60704d"
 
       def install
         bin.install "s3parcp"
@@ -19,8 +19,8 @@ class S3parcp < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/s3parcp/releases/download/v1.0.3-alpha/s3parcp_1.0.3-alpha_darwin_arm64.tar.gz"
-      sha256 "c9d5b7b1fc8a6737d91e90e6e9e16b4c7007201cfc0c85ab378018be1a346dde"
+      url "https://github.com/chanzuckerberg/s3parcp/releases/download/v1.0.0/s3parcp_1.0.0_darwin_arm64.tar.gz"
+      sha256 "779e1b1b9da9a97107d3343140d16c62964d4ed9b8eac419fd91a2df9102f553"
 
       def install
         bin.install "s3parcp"
@@ -32,8 +32,8 @@ class S3parcp < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/s3parcp/releases/download/v1.0.3-alpha/s3parcp_1.0.3-alpha_linux_arm64.tar.gz"
-      sha256 "087c03090cff2da0ed1499edeb58ab7e4e0c2aece873948a1e61c61a00e1650f"
+      url "https://github.com/chanzuckerberg/s3parcp/releases/download/v1.0.0/s3parcp_1.0.0_linux_arm64.tar.gz"
+      sha256 "8d8384eb5dd15339095c571b43b7b06a0a26cb9e60a3d03aec10f7b69e0d2e08"
 
       def install
         bin.install "s3parcp"
@@ -42,8 +42,8 @@ class S3parcp < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/s3parcp/releases/download/v1.0.3-alpha/s3parcp_1.0.3-alpha_linux_amd64.tar.gz"
-      sha256 "335e08219c5af9d6c0ccd12993154698eb5a17b36919c3b2a54a69d8cbcbfd0b"
+      url "https://github.com/chanzuckerberg/s3parcp/releases/download/v1.0.0/s3parcp_1.0.0_linux_amd64.tar.gz"
+      sha256 "902ea2d983c4ca2801ae4d656137df71b13a8cc6f53145cf4c592e3769001995"
 
       def install
         bin.install "s3parcp"

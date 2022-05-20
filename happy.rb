@@ -5,20 +5,20 @@
 class Happy < Formula
   desc "A command line tool for happy path."
   homepage "https://github.com/chanzuckerberg/happy"
-  version "0.19.1"
+  version "0.20.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.19.1/happy_0.19.1_darwin_arm64.tar.gz"
-      sha256 "706b99a8d94bc10cca0c3265d8f8827929785050307a1c8b0569638178e1c15d"
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.20.0/happy_0.20.0_darwin_amd64.tar.gz"
+      sha256 "e36133b9501fbdc587259e4b840083f8e3f2a3ad1955e131028a2034ac2d3bb9"
 
       def install
         bin.install "happy"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.19.1/happy_0.19.1_darwin_amd64.tar.gz"
-      sha256 "6fad2354a921d993c9b84c9c619bf59a84c3b93408d8f24da076719c38406f20"
+    if Hardware::CPU.arm?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.20.0/happy_0.20.0_darwin_arm64.tar.gz"
+      sha256 "98675d97d80c355e85d16212ae02fc8bee65e71a9cc2365acb718dc7b0e525dc"
 
       def install
         bin.install "happy"
@@ -28,16 +28,16 @@ class Happy < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.19.1/happy_0.19.1_linux_amd64.tar.gz"
-      sha256 "3fd0d2dbc88e321c14bb9b4ab8594d1613adb8141cec5966e71fd71de237c62d"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.20.0/happy_0.20.0_linux_amd64.tar.gz"
+      sha256 "283354d5e0f95069dd82dddecd5269bc9b150418c5b8dfcfffe3b3177906e37b"
 
       def install
         bin.install "happy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.19.1/happy_0.19.1_linux_arm64.tar.gz"
-      sha256 "6d8a03b759db2e3d79f460da8e4fdc86241dd46104ed109dc1c390eed6d0829c"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.20.0/happy_0.20.0_linux_arm64.tar.gz"
+      sha256 "b3e355ab4245d711db9edc08dd5a45426428aea3b146c05df7dde40f6b3836bb"
 
       def install
         bin.install "happy"

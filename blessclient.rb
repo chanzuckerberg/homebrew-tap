@@ -5,20 +5,20 @@
 class Blessclient < Formula
   desc "SSH without pain."
   homepage "https://github.com/chanzuckerberg/blessclient"
-  version "1.5.3"
+  version "1.6.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/blessclient/releases/download/v1.5.3/blessclient_1.5.3_darwin_arm64.tar.gz"
-      sha256 "0f31ab3c00827a28443165188fcbc7c864fb1246843ba262c2858bdfcc3a22d6"
+      url "https://github.com/chanzuckerberg/blessclient/releases/download/v1.6.0/blessclient_1.6.0_darwin_arm64.tar.gz"
+      sha256 "76d9e25a6619f0649791fa6360b62e0467fc0ac4eabbdb6d1ed932ba47a5c7a8"
 
       def install
         bin.install "blessclient"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/blessclient/releases/download/v1.5.3/blessclient_1.5.3_darwin_amd64.tar.gz"
-      sha256 "236aaf5caf63e36299ce86c902c94f5e03e6ffa6b32d2cfb1cda71b1a5bd271d"
+      url "https://github.com/chanzuckerberg/blessclient/releases/download/v1.6.0/blessclient_1.6.0_darwin_amd64.tar.gz"
+      sha256 "12ea2487f603a9fd475573beafb3baaf43774267fef8b01da877e194eb3bbe8c"
 
       def install
         bin.install "blessclient"
@@ -28,16 +28,16 @@ class Blessclient < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/blessclient/releases/download/v1.5.3/blessclient_1.5.3_linux_arm64.tar.gz"
-      sha256 "d13f163ab0622f0144b7c07cb7eada1c231dba4af279afbd1b89b9243ddcab1a"
+      url "https://github.com/chanzuckerberg/blessclient/releases/download/v1.6.0/blessclient_1.6.0_linux_arm64.tar.gz"
+      sha256 "98ff9f552a51ae82f46dc4b93fae97a47af26b3fedea339777daf3e750625eea"
 
       def install
         bin.install "blessclient"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/blessclient/releases/download/v1.5.3/blessclient_1.5.3_linux_amd64.tar.gz"
-      sha256 "aa2ad272f6d46059d57fe5f32be72f40dacca1256f681004194cc1c1642862ba"
+      url "https://github.com/chanzuckerberg/blessclient/releases/download/v1.6.0/blessclient_1.6.0_linux_amd64.tar.gz"
+      sha256 "b750d5f8ec4d064a86a3f38fdd53712fd129d9d55e788003896b29629431cb3d"
 
       def install
         bin.install "blessclient"

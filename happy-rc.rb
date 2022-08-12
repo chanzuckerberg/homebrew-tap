@@ -5,20 +5,20 @@
 class HappyRc < Formula
   desc "A command line tool for happy path."
   homepage "https://github.com/chanzuckerberg/happy"
-  version "0.28.0-d01b633"
+  version "0.28.0-2c06299"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.28.0-d01b633/happy_0.28.0-d01b633_darwin_arm64.tar.gz"
-      sha256 "15aa3f36ed21c0abf20f0a1aab28ad99f0efcf50536cad0a20a6c76bae028f9d"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.28.0-2c06299/happy_0.28.0-2c06299_darwin_arm64.tar.gz"
+      sha256 "93b177f768593ab2f6cf7c707e38f428afd30ac61d79fbbc37a27477b648454a"
 
       def install
         bin.install "happy-rc"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.28.0-d01b633/happy_0.28.0-d01b633_darwin_amd64.tar.gz"
-      sha256 "b0009bbc02e2ad42bd6e054730fafa178d55b3c09d9d49a1523f561b957b336b"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.28.0-2c06299/happy_0.28.0-2c06299_darwin_amd64.tar.gz"
+      sha256 "c172b454c39c10416b4a800ee7c9b4e4a02c87cea7603dec56b5cafbdfcea5b1"
 
       def install
         bin.install "happy-rc"
@@ -28,16 +28,16 @@ class HappyRc < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.28.0-d01b633/happy_0.28.0-d01b633_linux_arm64.tar.gz"
-      sha256 "eb0317d3afa11e1bf029900eaaefaa106111122f1d6cd519c8481b243326a35f"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.28.0-2c06299/happy_0.28.0-2c06299_linux_arm64.tar.gz"
+      sha256 "b6f1197bfce4f013ce1a2e27a626f0fbc4b2ab97c13239b638058ded52ae93f8"
 
       def install
         bin.install "happy-rc"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.28.0-d01b633/happy_0.28.0-d01b633_linux_amd64.tar.gz"
-      sha256 "f8d6b7f8312b396cc1d4973ba2d2fd9f773bad39e08ca4f0e10fc00c7fcd7fb8"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.28.0-2c06299/happy_0.28.0-2c06299_linux_amd64.tar.gz"
+      sha256 "06ee0821f2adcf73bf8bee343c1b7648ae920d2c52fb0228ebf19720f151e5b2"
 
       def install
         bin.install "happy-rc"

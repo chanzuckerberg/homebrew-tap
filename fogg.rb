@@ -5,20 +5,20 @@
 class Fogg < Formula
   desc "Terraform without pain."
   homepage "https://github.com/chanzuckerberg/fogg"
-  version "0.70.0"
+  version "0.70.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.70.0/fogg_0.70.0_darwin_arm64.tar.gz"
-      sha256 "5dcd18b7717e06f770c6b3669bb2768e3ea45408b116f10664025d274ecb104f"
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.70.1/fogg_0.70.1_darwin_arm64.tar.gz"
+      sha256 "60e7ebfbe33a6b92bb0ee68f867eace9f551b17751cb83cc6b5ca895384428f2"
 
       def install
         bin.install "fogg"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.70.0/fogg_0.70.0_darwin_amd64.tar.gz"
-      sha256 "25cf7baab8c439f7bc694fc3f8d89306940169dcd076ad8b94bf31ef13728dfc"
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.70.1/fogg_0.70.1_darwin_amd64.tar.gz"
+      sha256 "58010219818e9fdb58f19da52eaff00c5d8ffa35c558a75d1b77dcd484357f7d"
 
       def install
         bin.install "fogg"
@@ -28,16 +28,16 @@ class Fogg < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.70.0/fogg_0.70.0_linux_amd64.tar.gz"
-      sha256 "f11889be030f799a8c33bd12324927db8479d199370868fcd88907d02055db58"
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.70.1/fogg_0.70.1_linux_amd64.tar.gz"
+      sha256 "adc37daa53eb46aa975b53b67f38a58e15add891be70b7e49230482854de1f06"
 
       def install
         bin.install "fogg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.70.0/fogg_0.70.0_linux_arm64.tar.gz"
-      sha256 "c5165e6bc1731f9e1b94c34789c8dba4323bbd4725925dceed6f61a25a74839f"
+      url "https://github.com/chanzuckerberg/fogg/releases/download/v0.70.1/fogg_0.70.1_linux_arm64.tar.gz"
+      sha256 "32ca35464ffa170bfd450e9d5a8361376572a533c1466ae4e1f656152c540022"
 
       def install
         bin.install "fogg"

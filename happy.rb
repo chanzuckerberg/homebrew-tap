@@ -5,20 +5,20 @@
 class Happy < Formula
   desc "A command line tool for happy path."
   homepage "https://github.com/chanzuckerberg/happy"
-  version "0.47.1"
+  version "0.48.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.47.1/happy_0.47.1_darwin_arm64.tar.gz"
-      sha256 "a7402882c2de5afeec737acc0ad6a1fae721ce8438d2fc7626f4dbd2cd71f02b"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.48.0/happy_0.48.0_darwin_arm64.tar.gz"
+      sha256 "7feb3c6c8749e6444fda9a13193f1cc5a0c0b48d212b43a8e454b49f4cd06979"
 
       def install
         bin.install "happy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.47.1/happy_0.47.1_darwin_amd64.tar.gz"
-      sha256 "eb7a37869d979fad4be8cba41cf8a285e3f0cb0abbb889b1f01d5c7940db36d6"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.48.0/happy_0.48.0_darwin_amd64.tar.gz"
+      sha256 "d34331bbe8c8e274e01f1df249d227cfef859039277a932fe3e0c0f15fb3087d"
 
       def install
         bin.install "happy"
@@ -28,16 +28,16 @@ class Happy < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.47.1/happy_0.47.1_linux_arm64.tar.gz"
-      sha256 "e0813b546aa409f470c6ea64e2896ba561977e8c08a9472860131ca5b8aa482f"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.48.0/happy_0.48.0_linux_arm64.tar.gz"
+      sha256 "8e34abf8e7d369cb28e464cf7eed111da81d5d5cd6a70950c71e0bd0074ea71f"
 
       def install
         bin.install "happy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.47.1/happy_0.47.1_linux_amd64.tar.gz"
-      sha256 "2511bb78ed2aba01e15b04d0975c086c180f953f8c6932bc984ba39dfa5b4fe9"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.48.0/happy_0.48.0_linux_amd64.tar.gz"
+      sha256 "af8202b5cbd69db73bbf0f520990d71777241e04dcf45945dce643c69ddfbbdc"
 
       def install
         bin.install "happy"

@@ -5,12 +5,12 @@
 class CzidCli < Formula
   desc "A CLI for uploading samples to Chan Zuckerberg ID"
   homepage "https://github.com/chanzuckerberg/czid-cli"
-  version "4.1.3"
+  version "5.0.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/czid-cli/releases/download/v4.1.3/czid-cli_darwin_arm64.tar.gz"
-      sha256 "5850c19ea1e60cd1bc6e5447956ee254828f51e48d95299b6041001634a4274c"
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/czid-cli/releases/download/v5.0.0/czid-cli_darwin_amd64.tar.gz"
+      sha256 "4be39969371cdadf954ae17256a0d6781326638305513609c85b1faf47fafa75"
 
       def install
         bin.install "czid"
@@ -18,9 +18,9 @@ class CzidCli < Formula
         zsh_completion.install "zsh_completion" => "_czid"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/czid-cli/releases/download/v4.1.3/czid-cli_darwin_amd64.tar.gz"
-      sha256 "44506a4fa4eb31e1736e034b63a786ac7117319ab7b4c39d153e2fc2cb74642d"
+    if Hardware::CPU.arm?
+      url "https://github.com/chanzuckerberg/czid-cli/releases/download/v5.0.0/czid-cli_darwin_arm64.tar.gz"
+      sha256 "557be8196ee3363e1ab7e2426c163b1ec37eba7e5631c30a839b233f34021a5c"
 
       def install
         bin.install "czid"
@@ -32,8 +32,8 @@ class CzidCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/czid-cli/releases/download/v4.1.3/czid-cli_linux_amd64.tar.gz"
-      sha256 "3bcf159858247d3d9bd7ebb5461773daca36a68f2713c37ecfaee3c541fe60c8"
+      url "https://github.com/chanzuckerberg/czid-cli/releases/download/v5.0.0/czid-cli_linux_amd64.tar.gz"
+      sha256 "8ef9d76e9d18d5bfe44ef81afa5e8b8de804ce275ec5868b1ae85d39f36817d1"
 
       def install
         bin.install "czid"

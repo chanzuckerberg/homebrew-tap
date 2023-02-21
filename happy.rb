@@ -5,20 +5,20 @@
 class Happy < Formula
   desc "A command line tool for happy path."
   homepage "https://github.com/chanzuckerberg/happy"
-  version "0.56.0"
+  version "0.56.1"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.56.0/happy_0.56.0_darwin_arm64.tar.gz"
-      sha256 "5395fbba5cf36b77c379acae126b8d678a054745dcccaff4ccfbd0800885a2e1"
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.56.1/happy_0.56.1_darwin_amd64.tar.gz"
+      sha256 "fb7e837b879ac67840f76da870473c9f3909ae952ce6c68e5a85a7bc8b324fe1"
 
       def install
         bin.install "happy"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.56.0/happy_0.56.0_darwin_amd64.tar.gz"
-      sha256 "177eaa4c8a295ee1d671f9ba39a34c6deb31715bf6bdf43c125c569e00e0849b"
+    if Hardware::CPU.arm?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.56.1/happy_0.56.1_darwin_arm64.tar.gz"
+      sha256 "d085348455d689a238c12da4562e567bd916aa61dbb9945ad7c5b72ae680730b"
 
       def install
         bin.install "happy"
@@ -27,17 +27,17 @@ class Happy < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.56.0/happy_0.56.0_linux_arm64.tar.gz"
-      sha256 "95dd9852db805ae1e6abd36bfcdb5a9dbd4277d305580ac734b70c4084e16a5a"
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.56.1/happy_0.56.1_linux_amd64.tar.gz"
+      sha256 "7c1a89a6737805013978d2c06445026cab522a8a648546bbef3221ee60912e9a"
 
       def install
         bin.install "happy"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.56.0/happy_0.56.0_linux_amd64.tar.gz"
-      sha256 "55468058ff0ea4f1b408b731b0a5c7252a39eb5a9439d20b5109c855f18770b4"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.56.1/happy_0.56.1_linux_arm64.tar.gz"
+      sha256 "f6bfa6dddc4a5ee82ef3221384793ab7cf979b473b3c0de390989baceb4949e1"
 
       def install
         bin.install "happy"

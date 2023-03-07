@@ -5,20 +5,20 @@
 class Happy < Formula
   desc "A command line tool for happy path."
   homepage "https://github.com/chanzuckerberg/happy"
-  version "0.59.0"
+  version "0.60.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.59.0/happy_0.59.0_darwin_amd64.tar.gz"
-      sha256 "1c5e8225e7c8598632c59dc9df34556feb9983d670a1c2c688cc260666fa646c"
+    if Hardware::CPU.arm?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.60.0/happy_0.60.0_darwin_arm64.tar.gz"
+      sha256 "ac0dd60232254b605349845082e450f7d73809f753d4ca945dfe04c5663daa3f"
 
       def install
         bin.install "happy"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.59.0/happy_0.59.0_darwin_arm64.tar.gz"
-      sha256 "49f501ec6bf76dc2a29a5a69d75f9594b59e9d7f6f8a61de58f128977a3306ed"
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.60.0/happy_0.60.0_darwin_amd64.tar.gz"
+      sha256 "d7e07b128702efa3e6d10f359424063a5d225e89dd5b3b23f2b943b5609bfa67"
 
       def install
         bin.install "happy"
@@ -27,17 +27,17 @@ class Happy < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.59.0/happy_0.59.0_linux_amd64.tar.gz"
-      sha256 "04275743e262253812cab1ba99bed11ae0b0485748bc23a10aea6f8e0d8c8070"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.60.0/happy_0.60.0_linux_arm64.tar.gz"
+      sha256 "86142458e53228eb162d6cc28dc5d710c204efb167286ae7be68f7dd955a5f27"
 
       def install
         bin.install "happy"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.59.0/happy_0.59.0_linux_arm64.tar.gz"
-      sha256 "eb918c14dd3fa98fd28d26307eced0c01947596ac0a607228f2617157b4fdf8b"
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.60.0/happy_0.60.0_linux_amd64.tar.gz"
+      sha256 "ae7a234cd4757853b897ec55704d24a30b9df7860e25ec660f24704267cc3921"
 
       def install
         bin.install "happy"

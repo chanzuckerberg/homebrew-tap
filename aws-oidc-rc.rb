@@ -5,20 +5,20 @@
 class AwsOidcRc < Formula
   desc "A command line utility tool to help generate AWS STS credentials from an OIDC application."
   homepage "https://github.com/chanzuckerberg/aws-oidc"
-  version "0.25.61-36eeb5a"
+  version "0.25.62-5c61e60"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.25.61-36eeb5a/aws-oidc_0.25.61-36eeb5a_darwin_amd64.tar.gz"
-      sha256 "1f67faba7f42e636e7d9f7a22f10df1180e05244af6cac0682d83bb523b59dd2"
+    if Hardware::CPU.arm?
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.25.62-5c61e60/aws-oidc_0.25.62-5c61e60_darwin_arm64.tar.gz"
+      sha256 "830859b72291d7dd0b50326eab33bf9391c0f42fbac7bc539c9a7e2be46b2204"
 
       def install
         bin.install "aws-oidc-rc"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.25.61-36eeb5a/aws-oidc_0.25.61-36eeb5a_darwin_arm64.tar.gz"
-      sha256 "b6df6db2d422cc6631769fcb7c42e1e3938889198f8267111a08e17095d431f1"
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.25.62-5c61e60/aws-oidc_0.25.62-5c61e60_darwin_amd64.tar.gz"
+      sha256 "e9c19f97d2d110a7da95aa16ad1350e063c9acaddca870ef3843559b4c104d7d"
 
       def install
         bin.install "aws-oidc-rc"
@@ -27,17 +27,17 @@ class AwsOidcRc < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.25.61-36eeb5a/aws-oidc_0.25.61-36eeb5a_linux_arm64.tar.gz"
-      sha256 "bf167d9a1e178bbf865ff5ee0b1271de17c7d259b18991d136c578a3a51b5eb9"
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.25.62-5c61e60/aws-oidc_0.25.62-5c61e60_linux_amd64.tar.gz"
+      sha256 "0404af6185c51f6415e0273e2fa7d5ace67e5e08775d854e192f148b69aabfd7"
 
       def install
         bin.install "aws-oidc-rc"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.25.61-36eeb5a/aws-oidc_0.25.61-36eeb5a_linux_amd64.tar.gz"
-      sha256 "b9f0e48ff59d8d8bfa25c872fdda98054bfb278c7a2d47f80f64f2a1875e7a68"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.25.62-5c61e60/aws-oidc_0.25.62-5c61e60_linux_arm64.tar.gz"
+      sha256 "62bc2faecc79256bbaeaef96fbad143adab54c29055a3332818180486c6179f9"
 
       def install
         bin.install "aws-oidc-rc"

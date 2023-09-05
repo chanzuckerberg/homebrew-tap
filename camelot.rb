@@ -5,20 +5,20 @@
 class Camelot < Formula
   desc "Publish the release."
   homepage "https://github.com/chanzuckerberg/camelot"
-  version "0.13.1"
+  version "0.15.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/camelot/releases/download/v0.13.1/camelot_0.13.1_darwin_arm64.tar.gz"
-      sha256 "fc3ac191e8c56cb0deca19d083d455432062dc449a8913bc282fb9c4d0f33033"
+      url "https://github.com/chanzuckerberg/camelot/releases/download/v0.15.0/camelot_0.15.0_darwin_arm64.tar.gz"
+      sha256 "51a665dcb012c3b676c3f0ca093b503b4cc609d56f9f19a8ea3c398fb52670dd"
 
       def install
         bin.install "camelot"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/camelot/releases/download/v0.13.1/camelot_0.13.1_darwin_amd64.tar.gz"
-      sha256 "4560d49f92c27a73865f9f7f8396353f86c7114ffbd900977d766811ad30b2ba"
+      url "https://github.com/chanzuckerberg/camelot/releases/download/v0.15.0/camelot_0.15.0_darwin_amd64.tar.gz"
+      sha256 "1cea6504f81d9ce56358b6ba9f035c3bbc5a6fe307a07ba5d44baf5dc60eff9a"
 
       def install
         bin.install "camelot"
@@ -28,16 +28,16 @@ class Camelot < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/camelot/releases/download/v0.13.1/camelot_0.13.1_linux_arm64.tar.gz"
-      sha256 "b94b5c8a182d850c1182d6c17547a59aed8f4ea4af56450713cb5a03e559632b"
+      url "https://github.com/chanzuckerberg/camelot/releases/download/v0.15.0/camelot_0.15.0_linux_arm64.tar.gz"
+      sha256 "6003cc6856ead8a1f4de10682c8759b8c9bba59add45390a3c5f9a1169357784"
 
       def install
         bin.install "camelot"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/camelot/releases/download/v0.13.1/camelot_0.13.1_linux_amd64.tar.gz"
-      sha256 "f18458654a031ce7024dec20c1b6d1f22d57e2c19f77025ecad90dbe37247082"
+      url "https://github.com/chanzuckerberg/camelot/releases/download/v0.15.0/camelot_0.15.0_linux_amd64.tar.gz"
+      sha256 "14f4e037b915d0408da46efa800875d02e560c55d92e564b2395043231e4642b"
 
       def install
         bin.install "camelot"

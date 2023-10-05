@@ -5,20 +5,20 @@
 class Happy < Formula
   desc "A command line tool for happy path."
   homepage "https://github.com/chanzuckerberg/happy"
-  version "0.110.0"
+  version "0.110.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.110.0/happy_0.110.0_darwin_arm64.tar.gz"
-      sha256 "ab11088bfea34b6071ea091c0514b2cdf867ead508b97e82aed4fd537a83da04"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.110.1/happy_0.110.1_darwin_arm64.tar.gz"
+      sha256 "4baf260da5c23d2d1f1dfa3afa83885a91c488adef98e09304b8efcaa766bfab"
 
       def install
         bin.install "happy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.110.0/happy_0.110.0_darwin_amd64.tar.gz"
-      sha256 "f8270f2f8fbc2e5ce143a1a8cc3022ba56753a0d4a54ed3224a8c826005baa1b"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.110.1/happy_0.110.1_darwin_amd64.tar.gz"
+      sha256 "33e77efff732c92d71fc951f987d3aa642c1e4c877045d33cd95980d374d6998"
 
       def install
         bin.install "happy"
@@ -28,16 +28,16 @@ class Happy < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.110.0/happy_0.110.0_linux_arm64.tar.gz"
-      sha256 "94a4e9600d5bf16dcd85ed8fc7e03d6abb8457d8c1e9b29be00b917afce9e91f"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.110.1/happy_0.110.1_linux_arm64.tar.gz"
+      sha256 "a52ac3a14176f17259780dd9ed20ea2ecc9f805b6b0e280da4c84b4dbe480c3c"
 
       def install
         bin.install "happy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.110.0/happy_0.110.0_linux_amd64.tar.gz"
-      sha256 "5e6985e8eb2c3a5bd5fb9ea2a8752c90dd06c1c92a48a7716136296d2319fca6"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.110.1/happy_0.110.1_linux_amd64.tar.gz"
+      sha256 "1cc572a13480c5d4fa8699bacfc20a7246980c1d86dca3034c6202896b7b8336"
 
       def install
         bin.install "happy"

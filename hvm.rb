@@ -5,20 +5,20 @@
 class Hvm < Formula
   desc "An environment manager for happy path."
   homepage "https://github.com/chanzuckerberg/happy"
-  version "0.110.1"
+  version "0.111.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.110.1/hvm_0.110.1_darwin_arm64.tar.gz"
-      sha256 "26d86f211f8d36a314fe24c1800edc6d46f49f65fd3c7b3dbc926bf6e8b72f7f"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.111.0/hvm_0.111.0_darwin_arm64.tar.gz"
+      sha256 "7ec4c7f5ae95fed149477675e257029405a1c5280a2c375b0d8f08b8f77f17c9"
 
       def install
         bin.install "hvm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.110.1/hvm_0.110.1_darwin_amd64.tar.gz"
-      sha256 "1b0c5f02c7436669641e0eff324c40a2b926fe4db12e05a71193d11931dcaefb"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.111.0/hvm_0.111.0_darwin_amd64.tar.gz"
+      sha256 "179267f6d9d18ea2e64cb4967ed35dac8f9eb1ed8d1c00b3a71b641456954aa6"
 
       def install
         bin.install "hvm"
@@ -28,16 +28,16 @@ class Hvm < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.110.1/hvm_0.110.1_linux_arm64.tar.gz"
-      sha256 "c3b5bfd745f685c1756a40e1d22c27751c2a886e533e10979258004287977c6e"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.111.0/hvm_0.111.0_linux_arm64.tar.gz"
+      sha256 "4205c772310f5f01d80b188a5896ed8e752e3619eb53cdbf808861eee2841f3d"
 
       def install
         bin.install "hvm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.110.1/hvm_0.110.1_linux_amd64.tar.gz"
-      sha256 "18f3979c9f7ba1593f2a379b25e4a72110aa6184c03d2cacafdc4d5f7a770c85"
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.111.0/hvm_0.111.0_linux_amd64.tar.gz"
+      sha256 "72f54ec7200f9931f96a6e26b17f23eec0a2b2588f641436740d1e5f4c24fcc9"
 
       def install
         bin.install "hvm"

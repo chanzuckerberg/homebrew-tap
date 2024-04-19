@@ -5,20 +5,20 @@
 class Hvm < Formula
   desc "An environment manager for happy path."
   homepage "https://github.com/chanzuckerberg/happy"
-  version "0.127.3"
+  version "0.127.4"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.127.3/hvm_0.127.3_darwin_arm64.tar.gz"
-      sha256 "f08e421abde8f823c1bcdc7ee11796482790cf079abd59b245025df43712f305"
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.127.4/hvm_0.127.4_darwin_amd64.tar.gz"
+      sha256 "976a2c265926f4562fba7cbbee516a5325e38c71dcb1ebcf2495fba19d556552"
 
       def install
         bin.install "hvm"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.127.3/hvm_0.127.3_darwin_amd64.tar.gz"
-      sha256 "d5134e8dbe88289a22915ba44bb6b5aa3b6cb3b232c991c3d7ce086df13865c9"
+    if Hardware::CPU.arm?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.127.4/hvm_0.127.4_darwin_arm64.tar.gz"
+      sha256 "7e35e21375bf6372adbcb21ed5ef7e1786fc25b29847ebed2e4e42451b91a4fb"
 
       def install
         bin.install "hvm"
@@ -27,17 +27,17 @@ class Hvm < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.127.3/hvm_0.127.3_linux_arm64.tar.gz"
-      sha256 "343474f2aa492155ffbc945ea099d21ef719ec0d65d81577ab3e9076b98c0f09"
+    if Hardware::CPU.intel?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.127.4/hvm_0.127.4_linux_amd64.tar.gz"
+      sha256 "c4d69751acf8961306f381456f5e5f5a3184d5f5300b1af6ba07bebf31e186da"
 
       def install
         bin.install "hvm"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/happy/releases/download/v0.127.3/hvm_0.127.3_linux_amd64.tar.gz"
-      sha256 "861f8aa2b99d160def4b26443160a451404643876085e50e26abe811eea2d200"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/chanzuckerberg/happy/releases/download/v0.127.4/hvm_0.127.4_linux_arm64.tar.gz"
+      sha256 "907b9f7e8b88a4c27b12eec2950299b6bd64f0fffde60094c2a2fcdeb243f363"
 
       def install
         bin.install "hvm"

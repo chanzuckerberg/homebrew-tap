@@ -5,12 +5,12 @@
 class CzidCli < Formula
   desc "A CLI for uploading samples to Chan Zuckerberg ID"
   homepage "https://github.com/chanzuckerberg/czid-cli"
-  version "5.0.6"
+  version "6.0.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/czid-cli/releases/download/v5.0.6/czid-cli_darwin_arm64.tar.gz"
-      sha256 "c9691df46be269e7e52ab222a4a4ffaa4561db5a3573116612414f171c3b39b4"
+    on_intel do
+      url "https://github.com/chanzuckerberg/czid-cli/releases/download/v6.0.0/czid-cli_darwin_amd64.tar.gz"
+      sha256 "073b9e317eb37b3b0f5058f281de6cf58b4df525669c64ed025f5a889ed4f2b1"
 
       def install
         bin.install "czid"
@@ -18,9 +18,9 @@ class CzidCli < Formula
         zsh_completion.install "zsh_completion" => "_czid"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/czid-cli/releases/download/v5.0.6/czid-cli_darwin_amd64.tar.gz"
-      sha256 "453dcfda3da3c83054be6db2c0322facd07cd42f66893f2ab31ab1703deb6b9f"
+    on_arm do
+      url "https://github.com/chanzuckerberg/czid-cli/releases/download/v6.0.0/czid-cli_darwin_arm64.tar.gz"
+      sha256 "8f17e1c8c6a85618b051683dd5745af43f2c738d07c8e743fea37336ffb93160"
 
       def install
         bin.install "czid"
@@ -31,14 +31,16 @@ class CzidCli < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/czid-cli/releases/download/v5.0.6/czid-cli_linux_amd64.tar.gz"
-      sha256 "dfd6392d724765d2f5ce7a7c246bd41f26df8ad8e724a50981c93f7beb61d0a9"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/chanzuckerberg/czid-cli/releases/download/v6.0.0/czid-cli_linux_amd64.tar.gz"
+        sha256 "ebb45b24429a79c6d026f2fb8d8439154f23e622969536e62401a6e8981f2141"
 
-      def install
-        bin.install "czid"
-        bash_completion.install "bash_completion" => "czid"
-        zsh_completion.install "zsh_completion" => "_czid"
+        def install
+          bin.install "czid"
+          bash_completion.install "bash_completion" => "czid"
+          zsh_completion.install "zsh_completion" => "_czid"
+        end
       end
     end
   end

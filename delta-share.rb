@@ -5,20 +5,20 @@
 class DeltaShare < Formula
   desc "The command line tool for the CZI Databricks Delta Share short-lived tokens."
   homepage "https://github.com/chanzuckerberg/delta-share"
-  version "0.0.8"
+  version "0.0.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.8/delta-share_0.0.8_darwin_amd64.tar.gz"
-      sha256 "78d37ba867d0fec0ba2c7006a72fc758d761d37436dc4afecbb0ca6535c6fff0"
+      url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.9/delta-share_0.0.9_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "2f8aa9d75fa3fb4b791c23f1c03ee71e42b255a2a5aff555bb12388d2e9302fb"
 
       def install
         bin.install "delta-share"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.8/delta-share_0.0.8_darwin_arm64.tar.gz"
-      sha256 "57fcef32bdecb749f6a21f729dd586455434866cd442d5df4ba623bc3672420b"
+      url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.9/delta-share_0.0.9_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "f084aab1a57365f8c62c597b4ecb4ec304f6ef2a4b8b2694edcfe36a04ab35c5"
 
       def install
         bin.install "delta-share"
@@ -29,8 +29,8 @@ class DeltaShare < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.8/delta-share_0.0.8_linux_amd64.tar.gz"
-        sha256 "fda319c0a316a34200c9db06b1a9f059a4662bd2f196650b329fa643e4f0b02d"
+        url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.9/delta-share_0.0.9_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "d221f93ba628768d50ac1e98bd524f7f62de3715cd243f588f638168f56f719a"
 
         def install
           bin.install "delta-share"
@@ -39,8 +39,8 @@ class DeltaShare < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.8/delta-share_0.0.8_linux_arm64.tar.gz"
-        sha256 "f0c31c79526ae8599564fb9fd39f2a4c115751d01b918d4392110601e0f2c313"
+        url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.9/delta-share_0.0.9_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "395378754a5a2ae8df7eed7681a6337aa811c099b17c0f572c09f7646f8a6639"
 
         def install
           bin.install "delta-share"

@@ -5,20 +5,20 @@
 class DeltaShare < Formula
   desc "The command line tool for the CZI Databricks Delta Share short-lived tokens."
   homepage "https://github.com/chanzuckerberg/delta-share"
-  version "0.0.12"
+  version "0.0.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.12/delta-share_0.0.12_darwin_amd64.tar.gz"
-      sha256 "f51facafeeb905d61b7f9b98271647c0e1d17ff0c4dc2a021016a335df4822a4"
+      url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.13/delta-share_0.0.13_darwin_amd64.tar.gz"
+      sha256 "bf133041f12c1c41bebd80d71e4d3a1cf815dc3511bc089c5f2f3a8ea41acc44"
 
       def install
         bin.install "delta-share"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.12/delta-share_0.0.12_darwin_arm64.tar.gz"
-      sha256 "2b2ff8b0331bee69e898d149e71d4511bdf338cfd988058cf7596ad6aadafd42"
+      url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.13/delta-share_0.0.13_darwin_arm64.tar.gz"
+      sha256 "f0a09dd703dbcd50e724539e6b72d9e31be8cd57c3f0189da42a0d653dd0cf44"
 
       def install
         bin.install "delta-share"
@@ -29,8 +29,8 @@ class DeltaShare < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.12/delta-share_0.0.12_linux_amd64.tar.gz"
-        sha256 "597bdab80e4060e52b686c5726a8a00b8ee19eb6440bbd76d3ac6d69d6d29585"
+        url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.13/delta-share_0.0.13_linux_amd64.tar.gz"
+        sha256 "85a7b4f875f750458aa3f7c6a12394261393824f41f15449180c8b6d9a6277a2"
 
         def install
           bin.install "delta-share"
@@ -39,8 +39,8 @@ class DeltaShare < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.12/delta-share_0.0.12_linux_arm64.tar.gz"
-        sha256 "d5e438349e3723b33b50ce5b0e8e5ea42f1e9a92cecb10e78bef26fc737a99cf"
+        url "https://github.com/chanzuckerberg/delta-share/releases/download/v0.0.13/delta-share_0.0.13_linux_arm64.tar.gz"
+        sha256 "705c318ebaa212a666e2846fc7c2194c854d6ec5e2b423ff78ddf1f8bff5b148"
 
         def install
           bin.install "delta-share"

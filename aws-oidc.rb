@@ -5,20 +5,20 @@
 class AwsOidc < Formula
   desc "A command line utility tool to help generate AWS STS credentials from an OIDC application."
   homepage "https://github.com/chanzuckerberg/aws-oidc"
-  version "0.34.0"
+  version "0.34.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.34.0/aws-oidc_0.34.0_darwin_amd64.tar.gz"
-      sha256 "f74f750dc08dd2355c772f16939190edb9e159ea625da90d42e6abeee69575ce"
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.34.2/aws-oidc_0.34.2_darwin_amd64.tar.gz"
+      sha256 "0f25ca7fe848f461dd263284df7a756b63bc909e18ceb09789359775c592266e"
 
       define_method(:install) do
         bin.install "aws-oidc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.34.0/aws-oidc_0.34.0_darwin_arm64.tar.gz"
-      sha256 "d7c3e5be29ff8a31b406f155e2eed7e0a4c6e6c9a4a6834dba802b9d714ed6c1"
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.34.2/aws-oidc_0.34.2_darwin_arm64.tar.gz"
+      sha256 "bc9b3139264004f9a371a58b4b60d027f7d521073234c9b7c45b08dd59dc0b23"
 
       define_method(:install) do
         bin.install "aws-oidc"
@@ -28,15 +28,15 @@ class AwsOidc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.34.0/aws-oidc_0.34.0_linux_amd64.tar.gz"
-      sha256 "1008bf1130a0e94713d4f320311a29d7d16c5045ad4f6583f0853e1a7e09244a"
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.34.2/aws-oidc_0.34.2_linux_amd64.tar.gz"
+      sha256 "c47e3bd1c6866e7b4b5726ceec47846ffba956c7624a094e887a749ac733f0d1"
       define_method(:install) do
         bin.install "aws-oidc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.34.0/aws-oidc_0.34.0_linux_arm64.tar.gz"
-      sha256 "2d4f67e3d27b2def322dd2005545867fbf7589cb76302ac40180174fb23da6d0"
+      url "https://github.com/chanzuckerberg/aws-oidc/releases/download/v0.34.2/aws-oidc_0.34.2_linux_arm64.tar.gz"
+      sha256 "f2be5fe1bfbf4d66d54fc56940c86229d03081139b5ade68806cfe11590a9f64"
       define_method(:install) do
         bin.install "aws-oidc"
       end

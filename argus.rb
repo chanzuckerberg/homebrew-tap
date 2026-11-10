@@ -5,20 +5,20 @@
 class Argus < Formula
   desc "The command line tool for the Argus platform."
   homepage "https://github.com/chanzuckerberg/argus-artifacts"
-  version "0.149.1"
+  version "0.149.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/chanzuckerberg/argus-artifacts/releases/download/v0.149.1/argus_0.149.1_darwin_amd64.tar.gz"
-      sha256 "6994236dc07ecc3e2f364625e73a64e42cfb07cde1a11edb03667ed85fa89ace"
+      url "https://github.com/chanzuckerberg/argus-artifacts/releases/download/v0.149.2/argus_0.149.2_darwin_amd64.tar.gz"
+      sha256 "3113975ec47d074b06af4790a7ced0f8f7a3d04bd00a8b04591e1ca04cb7798f"
 
       def install
         bin.install "argus"
       end
     end
     on_arm do
-      url "https://github.com/chanzuckerberg/argus-artifacts/releases/download/v0.149.1/argus_0.149.1_darwin_arm64.tar.gz"
-      sha256 "4206295441a38b7663143b3587b37bddd9da87ef48b03934a3f4565ab3179cad"
+      url "https://github.com/chanzuckerberg/argus-artifacts/releases/download/v0.149.2/argus_0.149.2_darwin_arm64.tar.gz"
+      sha256 "d38ea7ab5f4c90674be9b792b66822e01683e8b08df6b30eebdaa1eb97acc34d"
 
       def install
         bin.install "argus"
@@ -29,8 +29,8 @@ class Argus < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/chanzuckerberg/argus-artifacts/releases/download/v0.149.1/argus_0.149.1_linux_amd64.tar.gz"
-        sha256 "67af0332e450acb7782436ded9cc2abf3434427d9d91ef57f698487191a580bf"
+        url "https://github.com/chanzuckerberg/argus-artifacts/releases/download/v0.149.2/argus_0.149.2_linux_amd64.tar.gz"
+        sha256 "8d51e175cec26ddf6e8ccd7058d9dbe6d556f88bb83876a87e3371e6019f39ed"
 
         def install
           bin.install "argus"
@@ -39,8 +39,8 @@ class Argus < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/chanzuckerberg/argus-artifacts/releases/download/v0.149.1/argus_0.149.1_linux_arm64.tar.gz"
-        sha256 "904e15478358c61301af26a8f16722422b9fd91c691316e747e80f66b629d250"
+        url "https://github.com/chanzuckerberg/argus-artifacts/releases/download/v0.149.2/argus_0.149.2_linux_arm64.tar.gz"
+        sha256 "b5e6acc9999b9129e3468860c63b0eafa67f26c5c3720fdd40675acad8bb1969"
 
         def install
           bin.install "argus"
